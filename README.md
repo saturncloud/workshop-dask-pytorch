@@ -20,7 +20,7 @@ To get the full learning value from this workshop, attendees should have prior e
 1. Create an account on [Saturn Cloud Hosted](https://accounts.community.saturnenterprise.io/register) or use your organization's existing Saturn Cloud Enterprise installation. 
 1. Create a new project (keep defaults unless specified here)
     - Name: "workshop-dask-pytorch"
-    - Image: `saturncloud/saturn-dask-pytorch:2020.11.30.16.00`
+    - Image: `saturncloud/saturn-dask-pytorch:2020.11.30.16.00` (Or most recent date suffix available)
     - Workspace Settings
         - Size: `T4-4XLarge - 16 cores - 64 GB RAM - 1 GPU`
     - Click "Create"
