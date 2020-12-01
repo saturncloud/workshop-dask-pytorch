@@ -33,7 +33,7 @@ To get the full learning value from this workshop, attendees should have prior e
     - Click "Create"
 1. Start both the Jupyter Server and Dask Cluster
 1. Open Jupyter Lab
-1. From Jupyter Lab, open a new Terminal window and clone the workshop-scaling-ml repository:
+1. From Jupyter Lab, open a new Terminal window and clone the workshop-dask-pytorch repository:
     ```bash
     git clone https://github.com/saturncloud/workshop-dask-pytorch.git /tmp/workshop-dask-pytorch
     cp -r /tmp/workshop-dask-pytorch /home/jovyan/project
