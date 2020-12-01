@@ -12,7 +12,7 @@ client.wait_for_workers(3)
 import torch
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-from dask_pytorch import results, data, dispatch
+from dask_pytorch_ddp import results, data, dispatch
 from torch.utils.data.sampler import SubsetRandomSampler
 
 def prepro_batches(bucket, prefix):
