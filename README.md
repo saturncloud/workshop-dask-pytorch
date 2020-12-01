@@ -1,4 +1,4 @@
-<img style="float: right" src="img/saturn.png" width="300" />
+<img style="float: right" src="img/saturn_logo.png" width="300" />
 
 # Introduction to PyTorch with Dask
 
