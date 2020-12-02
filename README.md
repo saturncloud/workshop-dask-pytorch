@@ -46,7 +46,7 @@ To get the full learning value from this workshop, attendees should have prior e
 The project from the Saturn UI should look something like this:
 
 ![project](img/project.png)
+ -->
+Your JupyterLab environment should look like this:
 
-JupyterLab should look like this:
-
-![jupyterlab](img/jupyterlab.png) -->
+![jupyterlab](img/project_files.png)
