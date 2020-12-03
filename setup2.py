@@ -3,9 +3,11 @@ from dask.distributed import Client
 
 cluster = SaturnCluster(
     n_workers = 3, 
-    scheduler_size = 'g4dn4xlarge', 
-    worker_size = 'g4dn8xlarge'
+    scheduler_size = 'medium', 
+    worker_size = 'p32xlarge',
+    nthreads = 8
 )
+
 client = Client(cluster)
 client.wait_for_workers(3)
 
@@ -21,7 +23,7 @@ def prepro_batches(bucket, prefix):
     transforms.Resize(256), 
     transforms.CenterCrop(250), 
     transforms.ToTensor()])
-    whole_dataset = data.S3ImageFolder(bucket, prefix, transform=transform)
+    whole_dataset = data.S3ImageFolder(bucket, prefix, transform=transform, anon = True)
     return whole_dataset
 
 def get_splits_parallel(train_pct, data, batch_size):
@@ -40,3 +42,12 @@ def get_splits_parallel(train_pct, data, batch_size):
     test_loader = torch.utils.data.DataLoader(data, sampler=train_sampler, batch_size=batch_size, num_workers=num_workers, multiprocessing_context=mp.get_context('fork'))
     
     return train_loader, test_loader
+
+from IPython.display import display, HTML
+gpu_links = f'''
+<b>GPU Dashboard links</b>
+<ul>
+<li><a href="{client.dashboard_link}/individual-gpu-memory" target="_blank">GPU memory</a></li>
+<li><a href="{client.dashboard_link}/individual-gpu-utilization" target="_blank">GPU utilization</a></li>
+</ul>
+'''
