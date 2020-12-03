@@ -23,6 +23,8 @@ To get the full learning value from this workshop, attendees should have prior e
     - Image: `saturncloud/saturn-gpu:2020.11.06` (Or most recent date suffix available)
     - Under Advanced Settings, Start Script (Bash) add the following:   
     ` /srv/conda/envs/saturn/bin/pip install graphviz dask-pytorch-ddp plotnine`
+    - Under Environment Variables, add the following:
+    `DASK_DISTRIBUTED__WORKER__DAEMON=False`
     - Workspace Settings
         - Size: `T4-4XLarge - 16 cores - 64 GB RAM - 1 GPU`
     - Click "Create"
