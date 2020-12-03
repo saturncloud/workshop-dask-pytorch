@@ -26,12 +26,13 @@ To get the full learning value from this workshop, attendees should have prior e
     - Under Environment Variables, add the following:
     `DASK_DISTRIBUTED__WORKER__DAEMON=False`
     - Workspace Settings
-        - Size: `T4-4XLarge - 16 cores - 64 GB RAM - 1 GPU`
+        - Size: `V100-2XLarge - 8 cores - 61 GB RAM - 1 GPU`
     - Click "Create"
 1. Attach a Dask Cluster to the project
-    - Worker Size: `T4-8XLarge - 32 cores - 128 GB RAM - 1 GPU`
+    - Scheduler Size: `Medium`
+    - Worker Size: `V100-2XLarge - 8 cores - 61 GB RAM - 1 GPU`
     - Number of workers (n_workers): 3
-    - Number of worker threads (nthreads): 3 (always the same as the number of workers when using GPU)
+    - Number of worker threads (nthreads): 8
     - Click "Create"
 1. Start both the Jupyter Server and Dask Cluster
 1. Open Jupyter Lab
