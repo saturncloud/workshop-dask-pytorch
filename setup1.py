@@ -24,9 +24,10 @@ img_t = transform(img)
 
 from IPython.display import display, HTML
 gpu_links = f'''
-<b>GPU Dashboard links</b>
+<b>Cluster Dashboard links</b>
 <ul>
-<li><a href="{client.dashboard_link}/individual-gpu-memory" target="_blank">GPU memory</a></li>
+<li><a href="{client.dashboard_link}/status" target="_blank">CPU dashboard</a></li>
 <li><a href="{client.dashboard_link}/individual-gpu-utilization" target="_blank">GPU utilization</a></li>
+<li><a href="{client.dashboard_link}/individual-gpu-memory" target="_blank">GPU memory</a></li>
 </ul>
 '''
