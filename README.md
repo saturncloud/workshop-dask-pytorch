@@ -45,12 +45,14 @@ If you are going to work through all the exercises, please use the steps below. 
 1. Navigate to the "workshop-dask-pytorch" folder in the File browser and start from the [01-getting-started.ipynb](01-getting-started.ipynb) notebook.
 
 
-<!-- ### Screenshots
+### Screenshots
 
-The project from the Saturn UI should look something like this:
+The project from the Saturn UI should look similar to this:
 
-![project](img/project.png)
- -->
+![project](img/project_setup1.png)
+![project](img/project_setup2.png)
+![project](img/project_setup3.png)
+
 Your JupyterLab environment should look like this:
 
 ![jupyterlab](img/project_files.png)
