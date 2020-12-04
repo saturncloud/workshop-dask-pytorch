@@ -21,7 +21,7 @@ If you are going to work through all the exercises, please use the steps below. 
 1. Create an account on [Saturn Cloud Hosted](https://accounts.community.saturnenterprise.io/register) or use your organization's existing Saturn Cloud Enterprise installation. 
 1. Create a new project (keep defaults unless specified here)
     - Name: "workshop-dask-pytorch"
-    - Image: `saturncloud/saturn-gpu:2020.11.06` (Or most recent date suffix available)
+    - Image: `saturncloud/saturn-gpu:2020.11.30` (Or most recent date suffix available)
     - Under Advanced Settings, Start Script (Bash) add the following:   
     ` /srv/conda/envs/saturn/bin/pip install graphviz dask-pytorch-ddp plotnine`
     - Under Environment Variables, add the following:
