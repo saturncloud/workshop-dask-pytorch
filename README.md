@@ -49,10 +49,11 @@ If you are going to work through all the exercises, please use the steps below. 
 
 The project from the Saturn UI should look similar to this:
 
-![project](img/project_setup1.png)
-![project](img/project_setup2.png)
-![project](img/project_setup3.png)
+<img style="float: right" src="img/project_setup1.png" width="500" />
+<img style="float: right" src="img/project_setup2.png" width="500" />
+<img style="float: right" src="img/project_setup3.png" width="500" />
 
-Your JupyterLab environment should look like this:
 
-![jupyterlab](img/project_files.png)
+Your JupyterLab environment should look like this:  
+
+<img style="float: right" src="img/project_files.png" width="500" />
