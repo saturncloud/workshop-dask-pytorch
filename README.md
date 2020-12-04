@@ -13,9 +13,10 @@ After this workshop you will know:
 
 To get the full learning value from this workshop, attendees should have prior experience with PyTorch. Experience with parallel computing is not needed.
 
-## Getting started
+## Getting Started
+If you are going to work through all the exercises, please use the steps below. If you'd like to just read along and not run the code, you can use the [notebook_output](notebook_output) folder above to see all the notebooks with the code already run.
 
-### Steps
+### Setup Steps
 
 1. Create an account on [Saturn Cloud Hosted](https://accounts.community.saturnenterprise.io/register) or use your organization's existing Saturn Cloud Enterprise installation. 
 1. Create a new project (keep defaults unless specified here)
