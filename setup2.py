@@ -1,13 +1,7 @@
 from dask_saturn import SaturnCluster
 from dask.distributed import Client
 
-cluster = SaturnCluster(
-    n_workers = 3, 
-    scheduler_size = 'medium', 
-    worker_size = 'p32xlarge',
-    nthreads = 8
-)
-
+cluster = SaturnCluster()
 client = Client(cluster)
 client.wait_for_workers(3)
 
