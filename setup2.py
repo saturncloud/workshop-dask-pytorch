@@ -37,7 +37,7 @@ def prepro_batches(bucket, prefix):
     return whole_dataset
             
             
-def get_splits_parallel(train_pct, data, batch_size):
+def get_splits_parallel(train_pct, data, batch_size, subset = False, workers = 1):
     '''Select two samples of data for training and evaluation'''
     classes = data.classes
     train_size = math.floor(len(data) * train_pct)
@@ -45,6 +45,10 @@ def get_splits_parallel(train_pct, data, batch_size):
     np.random.shuffle(indices)
     train_idx = indices[:train_size]
     test_idx = indices[train_size:len(data)]
+
+    if subset:
+        train_idx = np.random.choice(train_idx, size = int(np.floor(len(train_idx)*(1/workers))), replace=False)
+        test_idx = np.random.choice(test_idx, size = int(np.floor(len(test_idx)*(1/workers))), replace=False)
 
     train_sampler = SubsetRandomSampler(train_idx)
     test_sampler = SubsetRandomSampler(test_idx)
