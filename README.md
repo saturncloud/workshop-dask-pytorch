@@ -2,9 +2,9 @@
 
 # Introduction to PyTorch with Dask
 
-## Hands-on workshop: learn to apply Dask to improve PyTorch performance
+## Workshop: learn to apply Dask to improve PyTorch performance
 
-In this hands-on workshop, attendees will have the opportunity to see how common deep learning tasks in PyTorch can be easily parallelized using Dask clusters on Saturn Cloud.
+In this workshop, attendees will have the opportunity to see how common deep learning tasks in PyTorch can be easily parallelized using Dask clusters on Saturn Cloud.
 
 After this workshop you will know:
 - Basics of how Dask works
