@@ -23,7 +23,7 @@ If you are going to work through all the exercises, please use the steps below. 
     - Name: "workshop-dask-pytorch"
     - Image: `saturncloud/saturn-gpu:2020.11.30` (Or most recent date suffix available)
     - Under Advanced Settings, Start Script (Bash) add the following:   
-    ` /srv/conda/envs/saturn/bin/pip install graphviz dask-pytorch-ddp plotnine`
+    ` /srv/conda/envs/saturn/bin/pip install graphviz dask-pytorch-ddp plotnine tensorboardX`
     - Under Environment Variables, add the following:
     `DASK_DISTRIBUTED__WORKER__DAEMON=False`
     - Workspace Settings
